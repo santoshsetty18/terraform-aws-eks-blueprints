@@ -1431,3 +1431,17 @@ variable "consul_helm_config" {
   type        = any
   default     = {}
 }
+
+#-----------opensearch ADDON-------------
+
+variable "enable_opensearch" {
+  description = "Enable opensearch add-on"
+  type        = bool
+  default     = false
+}
+
+variable "opensearch_helm_config" {
+  description = "opensearch Helm Chart config"
+  type        = any
+  default     = {}
+}

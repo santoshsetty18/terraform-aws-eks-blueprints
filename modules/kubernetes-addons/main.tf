@@ -801,3 +801,10 @@ module "consul" {
   manage_via_gitops = var.argocd_manage_add_ons
   addon_context     = local.addon_context
 }
+
+module "opensearch" {
+  count         = var.enable_opensearch ? 1 : 0
+  source        = "./opensearch"
+  helm_config   = var.opensearch_helm_config
+  addon_context = local.addon_context
+}

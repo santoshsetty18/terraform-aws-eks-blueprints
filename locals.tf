@@ -1,5 +1,5 @@
 locals {
-
+ 
   context = {
     # Data resources
     aws_region_name = data.aws_region.current.name
