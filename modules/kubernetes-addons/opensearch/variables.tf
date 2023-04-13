@@ -1,5 +1,5 @@
 variable "helm_config" {
-  description = "Helm provider config for the airflow."
+  description = "Helm provider config for the opensearch."
   type        = any
   default     = {}
 }
